@@ -12,5 +12,5 @@ function adicionar() {
     else {
         lista.textContent += ', ' + amigo.value;
     }
-
+    amigo.value = ''
 }
