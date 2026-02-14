@@ -21,7 +21,21 @@ function adicionar() {
 }
 
 function sortear() {
-    if (amigos.length < 2){ 
+    if (amigos.length < 2) {
         alert('Adicione ao Menos 2 Amigos na Lista');
-    return; }
+        return;
+    }
 }
+
+function embaralha(lista) {
+    for (let indice = lista.length - 1; indice > 0; indice--) {
+        const indiceAleatorio = Math.floor(Math.random() * (indice + 1));
+
+        [lista[indice], lista[indiceAleatorio]] =
+            [lista[indiceAleatorio], lista[indice]];
+    }
+
+    return lista;
+
+}
+
