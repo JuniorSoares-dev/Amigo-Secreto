@@ -1,3 +1,5 @@
+let amigos = [];
+
 function adicionar() {
     let amigo = document.getElementById("nome-amigo");
     let lista = document.getElementById("lista-amigos");
@@ -6,11 +8,14 @@ function adicionar() {
         alert('Digite o Nome do Amigo');
         return;
     }
+
+    amigos.push(amigo.value);
+
     if (lista.textContent === '') {
         lista.textContent = amigo.value;
     }
     else {
         lista.textContent += ', ' + amigo.value;
     }
-    amigo.value = ''
+    amigo.value = '';
 }
