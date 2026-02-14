@@ -19,3 +19,9 @@ function adicionar() {
     }
     amigo.value = '';
 }
+
+function sortear() {
+    if (amigos.length < 2){ 
+        alert('adicione ao menos 2 amigos na lista');
+    return; }
+}
