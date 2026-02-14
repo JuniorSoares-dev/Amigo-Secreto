@@ -22,6 +22,6 @@ function adicionar() {
 
 function sortear() {
     if (amigos.length < 2){ 
-        alert('adicione ao menos 2 amigos na lista');
+        alert('Adicione ao Menos 2 Amigos na Lista');
     return; }
 }
