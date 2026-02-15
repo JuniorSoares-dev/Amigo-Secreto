@@ -22,7 +22,7 @@ function adicionar() {
 
 function sortear() {
     if (amigos.length < 4) {
-        alert('Adicione ao Menos 2 Amigos na Lista');
+        alert('Adicione ao Menos 4 Amigos na Lista');
         return;
     }
     embaralha(amigos);
